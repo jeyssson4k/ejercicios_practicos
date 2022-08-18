@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 360px;
+            /* border: 2px solid rgba(0, 0, 0, 0.2); */
+            border-radius: 12px 12px 0 0;
+            align-items: center;
+            /*padding: 32px;*/
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            border: 2px solid rgb(237, 237, 237);
+            padding: 32px;
+        }
+        .user-logo-container{
+            border: 2px solid rgb(237, 237, 237);
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            border-bottom: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+        }
+        .user-logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .user-logo .user-logo-head, .user-logo .user-logo-body{
+            background: rgb(0,0,0);
+            width: 28px;
+            height: 28px;
+        }
+        .user-logo .user-logo-head{
+            border-radius: 50%;
+        }
+        .user-logo .user-logo-body{
+            border-radius: 50% 50% 0 0;
+            width: 48px;
+            height: 28px;
+        }
+        input{
+            padding: 8px 6px;
+            margin: 4px 0;
+            border-radius: 2px;
+            border: none;
+            border: 2px solid rgb(230, 230, 230);
+            box-shadow: none;
+            
+        }
+        .input-submit{
+            border: none;
+            color: rgb(255, 255, 255);
+            background-color: rgb(40, 116, 230);
+        }
+        .input-submit:hover{
+            cursor:pointer;
+        }
+        .login-container{
+            border: 2px solid rgb(237, 237, 237);
+            width: 100%;
+            border-radius: 0 0 2px 2px;
+            border-top: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        .login-container .btn-login{
+            background: none;
+            border: none;
+            color: rgb(40, 116, 230);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .login-container .btn-login:hover{
+            outline: hidden;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="user-logo-container">
+            <div class="user-logo">
+                <div class="user-logo-head"></div>
+                <div class="user-logo-body"></div>
+            </div>
+        </div>
+
+        <form action="">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirmar contraseña" required>
+            <input class="input-submit" type="submit" value="Registrarse">
+        </form>
+
+        <div class="login-container">
+            <a href="./login.html" class="btn-login">Inciar sesión</a>
+        </div>
+    </main>
+</body>
+</html>

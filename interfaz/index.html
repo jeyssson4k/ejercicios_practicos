@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Aplicación login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        main{
+            display: flex;
+        }
+        .menu{
+            width: 200px;
+            background-color: rgb(0, 4, 82);
+            height: 100vh;
+            z-index: 100;
+            position: fixed;
+        }
+        .block{
+            width: 200px;
+            background-color: rgb(0, 4, 82);
+            height: 100vh;
+            display: block;
+            z-index: 99;
+        }
+        .container{
+            background: rgb(245, 245, 245);
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container h2{
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            color: rgb(0, 4, 82);
+
+        }
+        .container .data-container{
+            margin: auto;
+            align-self: center;
+            width: 100%;
+            margin-top: 40px;
+            height:calc(100vh - 120px);
+        }
+        .container .data-container h3{
+            margin: 40px 0 64px 40px;
+        }
+        .container .data-container .table-container{
+            /*border: 2px solid;
+            border-color: black;*/
+            width: 70%;
+            min-width: 600px;
+            max-width: 1080px;
+            margin: auto;
+        }
+        .container .data-container .table-container td{
+            border: 2px solid black;
+
+        }
+        main .menu .user-info{
+            display: flex;
+            padding: 8px;
+            align-items: center;
+            margin-top: 16px;
+        }
+        main .menu .user-info img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        main .menu .user-info .user-data{
+           margin: 4px;
+        }
+        main .menu .user-info .user-data span{
+            color: rgb(255,255,255);
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        main .menu nav{
+            margin-top: 20px;
+        }
+        main .menu nav ul li{
+            width: 100%;
+            padding: 16px;
+        }
+        main .menu nav ul li a{
+            color: rgb(255,255,255);
+            transition: all .3s ease;
+        }
+        main .menu nav ul li a:hover{
+            color: rgb(90,110,255);
+            transition: all .3s ease;
+        }
+        .active{
+            background-color: rgba(0, 4, 42, 0.582);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <aside class="menu">
+            <div class="user-info">
+                <img draggable="false" src="https://png.pngtree.com/png-clipart/20190116/ourmid/pngtree-yellow-cat-cute-cat-sprouting-cat-cat-illustration-png-image_403119.jpg" alt="">
+                <div class="user-data">
+                    <span>Usuario: Usuario1</span>
+                    <span>Nombre: Usuario1</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./logs.html">Log Sesión</a></li>
+                    <li class="active"><a href="#">Log base de datos</a></li>
+                    <li><a href="./singup.html">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <aside class="block"></aside>
+        <section class="container">
+            <h2>Aplicación Log In</h2>
+            <section class="data-container">
+               <h3>LOGS BASE DE DATOS</h3>
+                <table  class="table-container">
+                    <tr>
+                        <td><strong>N°</strong></td>
+                        <td><strong>Tabla</strong></td>
+                        <td><strong>Acción</strong></td>
+                        <td><strong>Descripción</strong></td>
+                        <td><strong>Fecha</strong></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Usuario</td>
+                        <td>Insert</td>
+                        <td>Descripción</td>
+                        <td>2022-06-18</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Usuario</td>
+                        <td>Update</td>
+                        <td>Descripción</td>
+                        <td>2022-05-21</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Persona</td>
+                        <td>Update</td>
+                        <td>Descripción</td>
+                        <td>2022-04-28</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Usuario</td>
+                        <td>Delete</td>
+                        <td>Descripción</td>
+                        <td>2022-03-23</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Persona</td>
+                        <td>Insert</td>
+                        <td>Descripción</td>
+                        <td>2022-02-21</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Persona</td>
+                        <td>Delete</td>
+                        <td>Descripción</td>
+                        <td>2022-01-20</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
