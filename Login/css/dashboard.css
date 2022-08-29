@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+}
+.menu{
+    width: 200px;
+    background-color: rgb(0, 4, 82);
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+}
+.block{
+    width: 200px;
+    background-color: rgb(0, 4, 82);
+    height: 100vh;
+    display: block;
+    z-index: 99;
+}
+.container{
+    background: rgb(245, 245, 245);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(0, 4, 82);
+
+}
+.container .data-container{
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    margin-top: 40px;
+    height:calc(100vh - 120px);
+}
+.container .data-container h3{
+    margin: 40px 0 64px 40px;
+}
+.container .data-container .table-container{
+    width: 70%;
+    min-width: 600px;
+    max-width: 1080px;
+    margin: auto;
+}
+.container .data-container .table-container td{
+    border: 2px solid black;
+
+}
+main .menu .user-info{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    margin-top: 16px;
+}
+main .menu .user-info img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+main .menu .user-info .user-data{
+   margin: 4px;
+}
+main .menu .user-info .user-data span{
+    color: rgb(255,255,255);
+    margin-left: 8px;
+    font-size: 14px;
+}
+main .menu nav{
+    margin-top: 20px;
+}
+main .menu nav ul li{
+    width: 100%;
+    padding: 16px;
+}
+main .menu nav ul li a{
+    color: rgb(255,255,255);
+    transition: all .3s ease;
+}
+main .menu nav ul li a:hover{
+    color: rgb(90,110,255);
+    transition: all .3s ease;
+}
+.active{
+    background-color: rgba(0, 4, 42, 0.582);
+    font-weight: bold;
+}
